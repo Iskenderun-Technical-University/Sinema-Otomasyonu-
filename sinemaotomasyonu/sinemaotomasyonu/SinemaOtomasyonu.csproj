@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FA9CA84-A7B4-4B93-9C9E-1DC2BBEC0E2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SinemaOtomasyonu</RootNamespace>
+    <AssemblyName>SinemaOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sinema.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Gerekli\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBiletAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBiletAl.Designer.cs">
+      <DependentUpon>FrmBiletAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmBilgileri.Designer.cs">
+      <DependentUpon>FrmFilmBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmDetay.Designer.cs">
+      <DependentUpon>FrmFilmDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmSec.Designer.cs">
+      <DependentUpon>FrmFilmSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelBilgileri.Designer.cs">
+      <DependentUpon>FrmPersonelBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelGiris.Designer.cs">
+      <DependentUpon>FrmPersonelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalonBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalonBilgileri.Designer.cs">
+      <DependentUpon>FrmSalonBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYonetimEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYonetimEkrani.Designer.cs">
+      <DependentUpon>FrmYonetimEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genel\Ayarlar.cs" />
+    <Compile Include="Genel\Veritabani.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Genel\Salon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Genel\Salon.Designer.cs">
+      <DependentUpon>Salon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmBiletAl.resx">
+      <DependentUpon>FrmBiletAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmBilgileri.resx">
+      <DependentUpon>FrmFilmBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmDetay.resx">
+      <DependentUpon>FrmFilmDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmSec.resx">
+      <DependentUpon>FrmFilmSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelBilgileri.resx">
+      <DependentUpon>FrmPersonelBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelGiris.resx">
+      <DependentUpon>FrmPersonelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalonBilgileri.resx">
+      <DependentUpon>FrmSalonBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYonetimEkrani.resx">
+      <DependentUpon>FrmYonetimEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Genel\Salon.resx">
+      <DependentUpon>Salon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asfis_ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afis_yukleniyor.png" />
+    <None Include="Resources\video.png" />
+    <None Include="Resources\perde.png" />
+    <None Include="Resources\kapi.png" />
+    <None Include="Resources\tek_koltuk_dolu.png" />
+    <None Include="Resources\cift_koltuk_bos.png" />
+    <None Include="Resources\cift_koltuk_dolu.png" />
+    <None Include="Resources\tek_koltuk_bos.png" />
+    <None Include="Resources\ayak_asagi.png" />
+    <None Include="Resources\ayak_sag.png" />
+    <None Include="Resources\cift_koltuk_iptal.png" />
+    <None Include="Resources\tek_koltuk_iptal.png" />
+    <None Include="Resources\water.png" />
+    <None Include="Resources\exit_man.png" />
+    <None Include="Resources\film_projector.png" />
+    <Content Include="sinema.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
